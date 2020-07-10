@@ -52,6 +52,19 @@ class Database extends \CodeIgniter\Database\Config
 	];
 
 	/**
+	 * The Redis database connection.
+	 *
+	 * @var array
+	 */
+	public static $redis = [
+		'hostname' => '127.0.0.1',
+		'username' => '',
+		'password' => '',
+		'DBDriver' => 'Redis',
+		'port'     => 6379,
+	];
+
+	/**
 	 * This database connection is used when
 	 * running PHPUnit database tests.
 	 *
